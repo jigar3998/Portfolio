@@ -11,7 +11,7 @@ import { Divider } from "@chakra-ui/layout";
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Stack spacing="24px">
+    <Stack spacing="24px" overflow="hidden">
       <Header colorMode={colorMode} toggleColorMode={toggleColorMode} />
       {colorMode === "dark" ? <Divider /> : null}
       <Skills />

@@ -47,15 +47,15 @@ function Skills() {
   };
 
   return (
-    <Wrap justify="center" height={{ base: "1100px", md: "1100px", lg: "660px" }}>
+    <Wrap justify="center" height={{ base: "1100px", md: "1200px", lg: "660px" }}>
       <Text fontSize="4xl" textAlign="center" >{skillsSection?.title}</Text>
-      <Wrap justify="center">
+      <Wrap justify="center" spacing={10}>
       <WrapItem w={{ base: 380, md: 450, lg: 550 }}>
         <Lottie options={defaultOptions} />
       </WrapItem>
       <WrapItem paddingTop={19}  w={{ base: 380, md: 450}} >
         <VStack spacing={5}>
-          <HStack spacing={10}>
+          <HStack spacing={12}>
             <Tippy content="Html5">
               <IconButton icon={<AiFillHtml5 />} fontSize={60} variant="unstyled" />
             </Tippy>
@@ -66,7 +66,7 @@ function Skills() {
               <IconButton icon={<DiSass />} fontSize={60} variant="unstyled" />
             </Tippy>
           </HStack>
-          <HStack spacing={10}>
+          <HStack spacing={12}>
             <Tippy content="JavaScript">
               <IconButton
                 icon={<DiJavascript1 />}
@@ -89,7 +89,7 @@ function Skills() {
               />
             </Tippy>
           </HStack>
-          <HStack spacing={10}>            
+          <HStack spacing={12}>            
             <Tippy content="npm">
               <IconButton icon={<DiNpm />} fontSize={60} variant="unstyled" />
             </Tippy>
@@ -108,7 +108,7 @@ function Skills() {
               />
             </Tippy>
           </HStack>
-          <HStack spacing={10}>
+          <HStack spacing={12}>
             <Tippy content="sql-database">
               <IconButton icon={<SiMysql />} fontSize={60} variant="unstyled" />
             </Tippy>
@@ -128,7 +128,7 @@ function Skills() {
               />
             </Tippy>
           </HStack>
-          <HStack spacing={10}>
+          <HStack spacing={12}>
             <Tippy content="Git">
               <IconButton
                 icon={<DiGit />}
@@ -145,9 +145,9 @@ function Skills() {
                 fontSize={60}
                 variant="unstyled"
               />
-            </Tippy>{" "}
+            </Tippy>
           </HStack>
-          <HStack spacing={10}>
+          <HStack spacing={12}>
             <Tippy content="Express">
               <IconButton
                 icon={<SiExpress />}

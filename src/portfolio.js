@@ -30,7 +30,7 @@ export const skillsSection = {
   skills: [
     "⚡ Web Applications with MERN Stack",
     "⚡ Develop highly interactive Front end / User Interfaces for web and mobile applications",
-    "⚡ Progressive Web Applications ( PWA )",
+    "⚡ Gained Experience with 3 internships and worked on 6+ projects based on JavaScript",
   ],
   softwareSkills: [
     {

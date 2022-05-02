@@ -68,9 +68,9 @@ function Header({ colorMode, toggleColorMode }) {
 
   return (
     <>
-      <Box bg={colorMode === "dark" ? "dark" : "#9DECF9"} height={{ base: "900px", md: "650px", lg: "630px" }}>
+      <Box bg={colorMode === "dark" ? "dark" : "#9DECF9"} height={{ base: "auto", md: "900px", lg: "630px" }}>
         <Box >
-          <HStack marginTop="2%" justify="right">
+          <HStack marginTop="2%" justify="right" paddingRight="2%">
             {/* <Menu>
               <MenuButton
                 as={IconButton}
@@ -87,27 +87,28 @@ function Header({ colorMode, toggleColorMode }) {
             <IconButton
               icon={colorMode === "light" ? <FaSun /> : <FaMoon />}
               isRound="true"
-              size="lg"
+              size={{ base:"small", md:"lg", lg:"lg"}}
               onClick={toggleColorMode}
+              
             />
           </HStack>
         </Box>
 
-        <Wrap align="center" justify="center" spacing={20}>
+        <Wrap align="center" justify="center">
           <WrapItem>
             <Center marginTop={10}>
               <VStack spacing={8}>
                 <IconButton
                   icon={<FaLaptopCode />}
-                  fontSize={{ base: "45px", md: "50px", lg: "80px" }}
+                  fontSize={{ base: "30px", md: "50px", lg: "80px" }}
                   variant="unstyled"
                 />
-                <Text fontSize={{ base: "40px", md: "50px", lg: "70px" }}>
+                <Text fontSize={{ base: "35px", md: "50px", lg: "70px" }}>
                   {HeaderSection.title}
                 </Text>
 
                 <Text
-                  fontSize={{ base: "20px", md: "20px", lg: "25px" }}
+                  fontSize={{ base: "16px", md: "20px", lg: "25px" }}
                   p={2}
                   textAlign={["center", "center"]}
                 >
@@ -123,8 +124,8 @@ function Header({ colorMode, toggleColorMode }) {
           </WrapItem>
           <WrapItem>
             <Center>
-              <VStack >
-                <Lottie options={defaultOptions} width={350} />
+              <VStack paddingBottom="10px">
+                <Lottie options={defaultOptions} width="80%" height="80%"/>
                 <HStack>
                   <span
                     onClick={() => {

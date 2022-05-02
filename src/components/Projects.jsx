@@ -28,17 +28,20 @@ function Project({ colorMode }) {
               w={[230, 400]}
               borderWidth={colorMode === "dark" ? "0px" : "1px"}
               borderRadius="lg"
-              height="450px"
+              height={{base:"370px", md:"450px", lg:"450px"}}
+              width={{base:"300px"}}
               margin="5px"
               bg={colorMode === "dark" ? "rgb(1, 22, 39)" : null}
+              align="center"
             >
               <Image
-                w={[250, 400]}
+                w={[280, 400]}
                 maxH="200px"
                 src={project.imageUrl}
                 alt={project.imageAlt}
                 padding="10px"
                 borderRadius="10px"
+                
               />
               <Box p="5" align="center">
                 <Box
@@ -48,13 +51,13 @@ function Project({ colorMode }) {
                   lineHeight="tight"
                   isTruncated
                 >
-                  <Text fontSize={{ base: "15px", md: "20px", lg: "25px" }}>
+                  <Text fontSize={{ base: "16px", md: "20px", lg: "25px" }}>
                     {project.title}
                   </Text>
                 </Box>
                 <Spacer />
                 <Box>
-                  <Text fontSize="large">{project.shortdescription}</Text>
+                  <Text fontSize={{ base: "12px", md: "15px", lg: "large" }}>{project.shortdescription}</Text>
                 </Box>
               </Box>
               <Box align="center">
@@ -62,8 +65,8 @@ function Project({ colorMode }) {
                   onClick={() => handleModal(index)}
                   colorScheme="twitter"
                   leftIcon={<MdReceipt />}
-                  height="48px"
-                  width="150px" 
+                  height={{base:"30px", md:"40px", lg:"48px"}}
+                  width={{base:"120px", md:"130px", lg:"150px"}} 
                 >
                   View Details
                 </Button>
