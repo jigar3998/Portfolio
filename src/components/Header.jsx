@@ -68,9 +68,9 @@ function Header({ colorMode, toggleColorMode }) {
 
   return (
     <>
-      <Box bg={colorMode === "dark" ? "dark" : "#9DECF9"} height={{ base: "auto", md: "900px", lg: "630px" }}>
+      <Box bg={colorMode === "dark" ? "dark" : "#9DECF9"} height={{ base: "900px", md: "900px", lg: "630px" }}>
         <Box >
-          <HStack marginTop="2%" justify="right" paddingRight="2%">
+          <HStack marginTop="2%" justify="right" paddingRight="2%" size={{ base:"medium", md:"large", lg:"xl"}}>
             {/* <Menu>
               <MenuButton
                 as={IconButton}
@@ -86,8 +86,7 @@ function Header({ colorMode, toggleColorMode }) {
             </Menu> */}
             <IconButton
               icon={colorMode === "light" ? <FaSun /> : <FaMoon />}
-              isRound="true"
-              size={{ base:"small", md:"lg", lg:"lg"}}
+              isRound="true"              
               onClick={toggleColorMode}
               
             />
@@ -100,15 +99,15 @@ function Header({ colorMode, toggleColorMode }) {
               <VStack spacing={8}>
                 <IconButton
                   icon={<FaLaptopCode />}
-                  fontSize={{ base: "30px", md: "50px", lg: "80px" }}
+                  fontSize={{ base: "50px", md: "50px", lg: "80px" }}
                   variant="unstyled"
                 />
-                <Text fontSize={{ base: "35px", md: "50px", lg: "70px" }}>
+                <Text fontSize={{ base: "50px", md: "50px", lg: "70px" }}>
                   {HeaderSection.title}
                 </Text>
 
                 <Text
-                  fontSize={{ base: "16px", md: "20px", lg: "25px" }}
+                  fontSize={{ base: "20px", md: "20px", lg: "25px" }}
                   p={2}
                   textAlign={["center", "center"]}
                 >
