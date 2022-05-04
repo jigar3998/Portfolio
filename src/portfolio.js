@@ -18,7 +18,8 @@ import java from "./asserts/java.png";
 import as from "./asserts/as.jpg";
 import mysql from "./asserts/mysql.png";
 import php from "./asserts/php.png";
-
+import firebase from "./asserts/firebase.png"
+import gf from "./asserts/gf.png"
 
 export const HeaderSection = {
   title: "I'm Jigar Mehta",
@@ -176,6 +177,19 @@ export const Projects = [
     technology: [
       { tech: "ReactJS", image: ReactJS },
       { tech: "Blockchain Hyperledger", image: blockchain },
+    ],
+  },
+  {
+    imageUrl: gf,
+    imageAlt: "Good-Food",
+    title: "Good-Food",
+    shortdescription:
+      "A full-fledged Food ordering website built for ordering food of various cuisines available in India.",
+    longDescription:
+      "It is an online food ordering website that has been built using concepts such as Redux and Hooks. It is integrated with Stripe API for payment gateway having functionalities of login/signup, adding to cart, checkout and many more.",
+    technology: [
+      { tech: "ReactJS", image: ReactJS },
+      { tech: "Firebase", image: firebase },
     ],
   },
   {
