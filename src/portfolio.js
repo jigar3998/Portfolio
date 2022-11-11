@@ -24,14 +24,14 @@ import gf from "./asserts/gf.png"
 export const HeaderSection = {
   title: "I'm Jigar Mehta",
   description: " A Software Engineer working with",
-  skills: ["Javascript", 1000, "NodeJS", 1000, "ReactJS", 1000],
+  skills: ["Javascript", 1000, "NodeJS", 1000, "ReactJS", 1000,"Android", 1000],
 };
 export const skillsSection = {
   title: "Tools and Technologies",
   skills: [
     "⚡ Web Applications with MERN Stack",
     "⚡ Develop highly interactive Front end / User Interfaces for web and mobile applications",
-    "⚡ Gained Experience with 3 internships and worked on 6+ projects based on JavaScript",
+    "⚡ Gained Experience with 5 internships and worked on 6+ projects based on JavaScript",
   ],
   softwareSkills: [
     {
@@ -88,6 +88,14 @@ export const skillsSection = {
       fontAwesomeClassname: "logos:git-icon",
     },
     {
+      skillName: "android",
+      fontAwesomeClassname: "logos:docker-icon",
+    },
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "logos:docker-icon",
+    },
+    {
       skillName: "docker",
       fontAwesomeClassname: "logos:docker-icon",
     },
@@ -97,6 +105,13 @@ export const skillsSection = {
 export const ExpereinceEducation = {
   title: "Experience and Education",
   content: [
+    {
+      date: "September 2022 - Present",
+      place: "TD Bank",
+      city: "Toronto, Ontario",
+      details: "Worked as a Mobile Software Intern to update Money Transfer Module",
+      icon: "work",
+    },
     {
       date: "September 2021 - Present",
       place: "University of Windsor",

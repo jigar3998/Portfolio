@@ -67,23 +67,9 @@ function Header({ colorMode, toggleColorMode }) {
   };
 
   return (
-    <>
-      <Box bg={colorMode === "dark" ? "dark" : "#9DECF9"} height={{ base: "900px", md: "900px", lg: "630px" }}>
-        <Box >
-          <HStack marginTop="2%" justify="right" paddingRight="2%" size={{ base:"medium", md:"large", lg:"xl"}}>
-            {/* <Menu>
-              <MenuButton
-                as={IconButton}
-                aria-label="Options"
-                icon={<HamburgerIcon />}
-                variant="solid"
-              />
-              <MenuList role="menu">
-                <MenuItem role="menuitem">Skills </MenuItem>
-                <MenuItem>Experience and Education</MenuItem>
-                <MenuItem>Projects</MenuItem>
-              </MenuList>
-            </Menu> */}
+      <Box bg={colorMode === "dark" ? "dark" : "#9DECF9"}>
+        <Box>
+          <HStack justify="right" paddingRight="2%" marginTop="35px">
             <IconButton
               icon={colorMode === "light" ? <FaSun /> : <FaMoon />}
               isRound="true"              
@@ -93,9 +79,9 @@ function Header({ colorMode, toggleColorMode }) {
           </HStack>
         </Box>
 
-        <Wrap align="center" justify="center">
+        <Wrap align="center" justify="center" marginTop="35px" paddingBottom="100px">
           <WrapItem>
-            <Center marginTop={10}>
+            <Center>
               <VStack spacing={8}>
                 <IconButton
                   icon={<FaLaptopCode />}
@@ -124,7 +110,7 @@ function Header({ colorMode, toggleColorMode }) {
           <WrapItem>
             <Center>
               <VStack paddingBottom="10px">
-                <Lottie options={defaultOptions} width="80%" height="80%"/>
+                <Lottie options={defaultOptions}/>
                 <HStack>
                   <span
                     onClick={() => {
@@ -155,13 +141,6 @@ function Header({ colorMode, toggleColorMode }) {
                   >
                     <Lottie options={mailOptions} width={65} />
                   </span>
-                  {/* <span
-                    onClick={() =>
-                      (window.location = "mailto:jigarmehta3998@gmail.com")
-                    }
-                  >
-                    <Lottie options={docOptions} width={65} />
-                  </span> */}
                   <a href={resumeDoc} target="_blank">
                     <Lottie options={docOptions} width={65} />
                   </a>
@@ -171,7 +150,6 @@ function Header({ colorMode, toggleColorMode }) {
           </WrapItem>
         </Wrap>
       </Box>
-    </>
   );
 }
 
